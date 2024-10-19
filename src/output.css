@@ -553,3 +553,19 @@ video {
 [hidden] {
   display: none;
 }
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.justify-center {
+  justify-content: center;
+}

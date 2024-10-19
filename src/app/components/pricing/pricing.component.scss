@@ -1,0 +1,89 @@
+.pricing {
+    // background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
+    // background: black;
+    background: linear-gradient(180deg,
+    rgba(255, 210, 99, 0.9) -28.35%,
+      rgba(255, 135, 167, 0.3));
+    height: auto;
+    padding: 5em 2em;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        @media(min-width: 1280px) {
+            flex-direction: row;
+        }
+
+        .pricing-copy {
+        .heading {
+            color: black;
+            font-family: "Rajdhani", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.5em;
+            line-height: 1.7;
+
+            @media(min-width:768px) {
+                font-size: 2em;
+            }
+
+
+        }
+
+        ol {
+            color: black;
+            font-family: "Rajdhani", sans-serif;
+            font-weight: 600;
+        }
+
+        p {
+            color: black;
+        }
+
+    }
+        .pricing-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            margin: 1.5em 0;
+
+            @media(min-width: 768px) {
+                flex-direction: row;
+            }
+        .pricing-card {
+            background: white;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+            height: auto;
+            padding: 2rem;
+            margin: 1em 0;
+
+            @media(min-width: 1280px) {
+                width: 13vw;
+            }
+
+            .card-title {
+                padding: 0.5em 0;
+                font-family: "Rajdhani", sans-serif;
+                font-weight: 600;
+            }
+
+            .card-image {
+                img {
+                    height: 10vh;
+                }
+            }
+
+            .card-price {
+                font-size: 2em;
+                padding: 0.5em 0em;
+                font-family: "Rajdhani", sans-serif;
+                font-weight: 700;
+            }
+        }
+        }
+}}

@@ -1,0 +1,89 @@
+.banner {
+  background: linear-gradient(180deg,
+      rgba(255, 135, 167) -28.35%,
+      rgba(255, 210, 99, 0.5));
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width: 1280px) {
+      flex-direction: row;
+    }
+
+    .banner-copy {
+      padding: 1em 2em 4em;
+      line-height: 1.5;
+
+      @media(min-width: 1024px) {
+        padding: 5em 3em 5em 10em;
+      }
+
+
+      .heading {
+        color: black;
+        font-family: "Changa One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+
+        @media(min-width: 768px) {
+          font-size: 2.5em;
+        }
+
+        @media(min-width: 1280px) {
+          font-size: 3em;
+        }
+
+        .highlight {
+          background-color: orange;
+          color: white;
+
+        }
+      }
+
+      p {
+        color: black;
+        margin: 2em 0;
+        line-height: 1.5;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      button {
+        color: white;
+        padding: 15px 50px;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0);
+        border: 2px solid rgba(0, 0, 0);
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.2;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover {
+          opacity: 0.8;
+          box-shadow: rgba(182, 173, 96, 0.4);
+        }
+      }
+
+    }
+
+    img {
+      width: 85vw;
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+
+      @media(min-width: 1280px) {
+        width: 35vw;
+        padding: 5em 6em 5em 2em;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+<section class="navigation">
+    <div class="desktop-menu" [ngClass]="{'desktopMenu': true, 'mobileMenu': false}">
+        <div class="nav-logo"><img src="assets/images/thoughttomvplogo.png" alt="logo"></div>
+        <nav class="nav-items">
+            <button (click)="scrollTo('top-banner')">Home</button>
+            <button (click)="scrollTo('features')">Features</button>
+            <button (click)="scrollTo('pricing')">Pricing</button>
+            <button (click)="scrollTo('work')">Work</button>
+            <button (click)="scrollTo('contact')">Contact</button>
+        </nav>
+    </div>
+    <div class="mobile-menu" [ngClass]="{'desktopMenu': false, 'mobileMenu': true}">
+        <div class="mobile-logo"><img src="assets/images/thoughttomvplogo.png" alt="logo"></div>
+        <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+          <button (click)="scrollTo('top-banner')" mat-menu-item>Home</button>
+          <button (click)="scrollTo('features')" mat-menu-item>Features</button>
+          <button (click)="scrollTo('pricing')" mat-menu-item>Pricing</button>
+          <button (click)="scrollTo('work')" mat-menu-item>Work</button>
+          <button (click)="scrollTo('footer')" mat-menu-item>Contact</button>
+        </mat-menu>
+
+    </div>
+    
+</section>
+
