@@ -1,22 +1,8 @@
 .work {
+    display: flex;
+    justify-content: center;
 
-    &__content {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 1em;
-
-        @media(min-width: 768px) {
-            padding: 3em;
-        }
-
-        img {
-            padding: 0.5em;
-            width: 100%;
-
-            @media(min-width: 1280px) {
-                width: 37%;  
-                padding: 2.5em;
-            }
-        }
+    img {
+        width: 80vw;
     }
 }
